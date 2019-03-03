@@ -8,5 +8,7 @@ npm install -S afeiship/next-file-content-replace --registry=https://registry.np
 
 ## usage:
 ```js
-//DOCS here!
+import 'next-file-content-replace';
+
+nx.fileContentReplace('./test.json', /appid:(.*)/,"appid:__FFEI__");
 ```
