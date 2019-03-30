@@ -5,14 +5,6 @@
 ```bash
 npm install -S afeiship/next-replace-in-file --registry=https://registry.npm.taobao.org
 ```
-## globby
-- https://github.com/sindresorhus/globby
-
-## options
-- https://github.com/mrmlnc/fast-glob#options-1
-
-## multiple replace
-- https://github.com/afeiship/next-array-replace
 
 ## usage:
 ```js
@@ -35,3 +27,12 @@ nx.replaceInFile(
   }
 );
 ```
+
+## globby
+- https://github.com/sindresorhus/globby
+
+## options
+- https://github.com/mrmlnc/fast-glob#options-1
+
+## multiple replace
+- https://github.com/afeiship/next-array-replace
