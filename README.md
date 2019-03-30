@@ -62,7 +62,7 @@ npm install -S afeiship/next-replace-in-file --registry=https://registry.npm.tao
   |  `absolute`  |                   [`absolute`](#absolute)                   |
 
 
-## multiple replace
+## resources
   - https://github.com/afeiship/next-array-replace
   - https://github.com/sindresorhus/globby
   - https://github.com/mrmlnc/fast-glob#options-1
