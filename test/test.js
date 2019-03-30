@@ -1,9 +1,6 @@
 var nx = require('next-js-core2');
-require('../src/next-file-content-replace');
+require('../src/next-replace-in-file');
 
-test('nx.fileContentReplace', function() {
-  // nx.fileContentReplace(result, obj1, obj2);
-  // expect(result.name, obj1.name).toBe(null);
-
-  nx.fileContentReplace('./test/project.config.json', /"appid": "(.*)"/, '__AKJLF__');
+test('nx.replaceInFile', function() {
+  nx.replaceInFile('test/**', [[/VERSION/gi, 'VERSION' + Math.random()]]);
 });

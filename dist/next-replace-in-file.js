@@ -2,7 +2,6 @@
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
   var fs = require('fs');
-  var path = require('path');
   var glob = require('glob');
   var CHARSET = 'utf-8';
   var DEFAULT_OPTIONS = { dot: true, ignore: '.git/*' };
@@ -10,12 +9,12 @@
   // next packages:
   require('next-array-replace');
 
-  nx.replaceInFile = function(inGlob, inArray, inOptions) {
+  nx.replaceInFile = function(inFiles, inArray, inOptions) {
     var options = nx.mix(DEFAULT_OPTIONS, inOptions);
-    var files = glob.sync(inGlob, options);
-    var replaceInFile = function(target) {
-      var fsState = fs.statSync(target);
-      if (fsState.isFile(target)) {
+    var files = typeof inFiles === 'string' ? glob.sync(inFiles, options) : inFiles;
+    var replaceInFile = function(filename) {
+      var fsState = fs.statSync(filename);
+      if (fsState.isFile(filename)) {
         var content = fs.readFileSync(filename, CHARSET);
         var result = nx.arrayReplace(content, inArray);
         fs.writeFileSync(filename, result);
