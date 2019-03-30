@@ -13,17 +13,17 @@
     var options = nx.mix(DEFAULT_OPTIONS, inOptions);
     var files = globby.sync(inFiles, options);
     var replaceInFile = function(filename) {
-      var fsState = fs.statSync(filename);
-      if (fsState.isFile(filename)) {
-        var content = fs.readFileSync(filename, CHARSET);
-        var result = nx.arrayReplace(content, inArray);
-        fs.writeFileSync(filename, result);
-      }
+      var content = fs.readFileSync(filename, CHARSET);
+      var result = nx.arrayReplace(content, inArray);
+      fs.writeFileSync(filename, result);
     };
 
     // replace files:
     files.forEach(function(filename) {
-      replaceInFile(filename);
+      var fsState = fs.statSync(filename);
+      if (fsState.isFile(filename)) {
+        replaceInFile(filename);
+      }
     });
   };
 
