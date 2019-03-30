@@ -1,6 +1,6 @@
 {
-  "VERSION0.3952125161966187": "1.0.0",
-  "description": "Webapck for mini program",
+  "_VERSION_.3952125161966187": "1.0.0",
+  "DESC": "Webapck for mini program",
   "setting": {
     "urlCheck": false,
     "es6": false,
@@ -14,7 +14,7 @@
   "appid": "__AKJLF__",
   "instituteCfg": {},
   "projectname": "institute-miaotu",
-  "libVERSION0.3952125161966187": "2.6.0",
+  "lib_VERSION_0.3952125161966187": "2.6.0",
   "condition": {
     "search": {
       "current": -1,

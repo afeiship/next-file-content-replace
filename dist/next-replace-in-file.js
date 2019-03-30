@@ -4,7 +4,7 @@
   var fs = require('fs');
   var globby = require('globby');
   var CHARSET = 'utf-8';
-  var DEFAULT_OPTIONS = { dot: true, ignore: '.git/*' };
+  var DEFAULT_OPTIONS = { dot: true, ignore: ['.git'] };
 
   // next packages:
   require('next-array-replace');

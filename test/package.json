@@ -1,6 +1,6 @@
 {
-  "name": "next-replace-in-file",
-  "VERSION0.3952125161966187": "1.0.0",
-  "description": "File content replace for next",
-  "homepage": "https://github.com/afeiship/next-replace-in-file"
+  "name": "next-replace-in-FILE",
+  "_VERSION_.3952125161966187": "1.0.0",
+  "DESC": "File content replace for next",
+  "homepage": "https://github.com/afeiship/next-replace-in-FILE"
 }
