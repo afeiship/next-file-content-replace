@@ -17,4 +17,5 @@ npm install -S afeiship/next-replace-in-file --registry=https://registry.npm.tao
 import 'next-replace-in-file';
 
 nx.replaceInFile('test/**', [[/VERSION/gi, 'version']]);
+nx.replaceInFile(['**','!node_modules'], [[/VERSION/gi, 'version']]);
 ```
