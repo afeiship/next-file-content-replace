@@ -28,7 +28,7 @@
     "prettier": "^1.14.3"
   },
   "dependencies": {
-    "glob": "^7.1.3",
+    "globby": "^9.1.0",
     "next-array-replace": "github:afeiship/next-array-replace",
     "next-js-core2": "github:afeiship/next-js-core2"
   }
