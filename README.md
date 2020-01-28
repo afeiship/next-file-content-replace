@@ -1,15 +1,15 @@
 # next-replace-in-file
-> File content replace for next
+> File content replace for next.
 
-## install:
+## installation
 ```bash
-npm install -S afeiship/next-replace-in-file --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-replace-in-file
 ```
 
-## usage:
+## usage
 > Basic usage.
   ```js
-  import 'next-replace-in-file';
+  import '@feizheng/next-replace-in-file';
 
   // basic usage:
   nx.replaceInFile('test/**', [[/VERSION/gi, 'version']]);

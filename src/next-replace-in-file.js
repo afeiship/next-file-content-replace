@@ -1,13 +1,13 @@
 (function() {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('next-js-core2');
+  var nx = global.nx || require('@feizheng/next-js-core2');
   var fs = require('fs');
   var globby = require('globby');
   var CHARSET = 'utf-8';
   var DEFAULT_OPTIONS = { dot: true, ignore: ['.git'] };
 
   // next packages:
-  require('next-array-replace');
+  require('@feizheng/next-array-replace');
 
   nx.replaceInFile = function(inFiles, inArray, inOptions) {
     var options = nx.mix(DEFAULT_OPTIONS, inOptions);
@@ -28,6 +28,6 @@
   };
 
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = nx.fileContentReplace;
+    module.exports = nx.replaceInFile;
   }
 })();
