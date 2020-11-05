@@ -6,7 +6,7 @@ describe('api.basic test', () => {
     nx.replaceInFile(
       '__tests__/**',
       [
-        [/_VERSION_/gi, '__VERSION__'],
+        [/____VERSION____/gi, '_____VERSION_____'],
         [/FILE/g, 'FILE'],
         [/DESC/g, 'DESC']
       ],

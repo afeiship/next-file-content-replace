@@ -1,6 +1,11 @@
 # next-replace-in-file
 > File content replace for next.
 
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
+
 ## installation
 ```bash
 npm install -S @feizheng/next-replace-in-file
@@ -41,28 +46,43 @@ npm install -S @feizheng/next-replace-in-file
 ## options
 > Not fully, because `fast-glob` does not implement all options of `node-glob`. See table below.
 
-  | node-glob(😂) |                        fast-glob(😎)                        |
-  | :-----------: | :---------------------------------------------------------: |
-  |     `cwd`     |                        [`cwd`](#cwd)                        |
-  |    `root`     |                              –                              |
-  |     `dot`     |                        [`dot`](#dot)                        |
-  |   `nomount`   |                              –                              |
-  |    `mark`     |            [`markDirectories`](#markdirectories)            |
-  |   `nosort`    |                              –                              |
-  |  `nounique`   |                     [`unique`](#unique)                     |
-  |   `nobrace`   |         [`nobrace`](#nobrace) or [`brace`](#brace)          |
-  | `noglobstar`  |   [`noglobstar`](#noglobstar) or [`globstar`](#globstar)    |
-  |    `noext`    |       [`noext`](#noext) or [`extension`](#extension)        |
-  |   `nocase`    |           [`nocase`](#nocase) or [`case`](#case)            |
-  |  `matchBase`  |                  [`matchbase`](#matchbase)                  |
-  |    `nodir`    |                  [`onlyFiles`](#onlyfiles)                  |
-  |   `ignore`    |                     [`ignore`](#ignore)                     |
-  |   `follow`    | [`followSymlinkedDirectories`](#followsymlinkeddirectories) |
-  |  `realpath`   |                              –                              |
-  |  `absolute`   |                   [`absolute`](#absolute)                   |
+  | node-glob(😂) |                        fast-glob(😎)                         |
+  | :----------: | :---------------------------------------------------------: |
+  |    `cwd`     |                        [`cwd`](#cwd)                        |
+  |    `root`    |                              –                              |
+  |    `dot`     |                        [`dot`](#dot)                        |
+  |  `nomount`   |                              –                              |
+  |    `mark`    |            [`markDirectories`](#markdirectories)            |
+  |   `nosort`   |                              –                              |
+  |  `nounique`  |                     [`unique`](#unique)                     |
+  |  `nobrace`   |         [`nobrace`](#nobrace) or [`brace`](#brace)          |
+  | `noglobstar` |   [`noglobstar`](#noglobstar) or [`globstar`](#globstar)    |
+  |   `noext`    |       [`noext`](#noext) or [`extension`](#extension)        |
+  |   `nocase`   |           [`nocase`](#nocase) or [`case`](#case)            |
+  | `matchBase`  |                  [`matchbase`](#matchbase)                  |
+  |   `nodir`    |                  [`onlyFiles`](#onlyfiles)                  |
+  |   `ignore`   |                     [`ignore`](#ignore)                     |
+  |   `follow`   | [`followSymlinkedDirectories`](#followsymlinkeddirectories) |
+  |  `realpath`  |                              –                              |
+  |  `absolute`  |                   [`absolute`](#absolute)                   |
 
 
 ## resources
   - https://github.com/afeiship/next-array-replace
   - https://github.com/sindresorhus/globby
   - https://github.com/mrmlnc/fast-glob#options-1
+
+## license
+Code released under [the MIT license](https://github.com/afeiship/next-replace-in-file/blob/master/LICENSE.txt).
+
+[version-image]: https://img.shields.io/npm/v/@feizheng/next-replace-in-file
+[version-url]: https://npmjs.org/package/@feizheng/next-replace-in-file
+
+[license-image]: https://img.shields.io/npm/l/@feizheng/next-replace-in-file
+[license-url]: https://github.com/afeiship/next-replace-in-file/blob/master/LICENSE.txt
+
+[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/next-replace-in-file
+[size-url]: https://github.com/afeiship/next-replace-in-file/blob/master/dist/next-replace-in-file.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@feizheng/next-replace-in-file
+[download-url]: https://www.npmjs.com/package/@feizheng/next-replace-in-file
