@@ -1,6 +1,6 @@
 {
-  "name": "@feizheng/next-replace-in-file",
-  "version": "1.0.2",
+  "name": "@jswork/next-replace-in-file",
+  "version": "1.0.0",
   "description": "File content replace for next.",
   "homepage": "https://github.com/afeiship/next-replace-in-file",
   "author": {
@@ -9,15 +9,15 @@
   },
   "scripts": {
     "build": "gulp",
-    "test": "jest --forceExit --detectOpenHandles --maxWorkers=10",
-    "start": "node ./express.js"
+    "test": "jest",
+    "start": "node ./express.js",
+    "release": "release-it"
   },
-  "main": "dist/next-replace-in-file.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
     "@feizheng/gulp-pkg-header": "^1.0.4",
-    "@feizheng/next-js-core2": "^2.6.0",
-    "@feizheng/rake-git": "^1.2.1",
+    "@jswork/next": "^1.0.0",
     "del": "^6.0.0",
     "express": "^4.17.1",
     "gulp": "^4.0.2",
@@ -30,26 +30,15 @@
     "gulp-uglify": "^3.0.2",
     "jest": "^26.6.3",
     "prettier": "^2.1.2",
+    "release-it": "^14.2.1",
     "uglify-js": "3.11.5",
-    "uglify-save-license": "^0.4.1",
-    "yargs": "^16.1.0"
+    "uglify-save-license": "^0.4.1"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@feizheng/next-array-replace": "^1.0.2"
-  },
-  "keywords": [
-    "next",
-    "file",
-    "replace",
-    "in",
-    "content",
-    "string",
-    "regexp",
-    "glob",
-    "pattern",
-    "globby"
-  ]
+    "@jswork/next-array-replace": "^1.0.0"
+  }
 }

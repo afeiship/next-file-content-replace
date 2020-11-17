@@ -1,22 +1,13 @@
-/*!
- * name: @feizheng/next-replace-in-file
- * description: File content replace for next.
- * homepage: https://github.com/afeiship/next-replace-in-file
- * version: 1.0.2
- * date: 2020-11-05T12:04:46.035Z
- * license: MIT
- */
-
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var fs = require('fs');
   var globby = require('globby');
   var CHARSET = 'utf-8';
   var DEFAULT_OPTIONS = { dot: true, debug: false, ignore: ['.git'] };
 
   // next packages:
-  require('@feizheng/next-array-replace');
+  require('@jswork/next-array-replace');
 
   nx.replaceInFile = function (inFiles, inArray, inOptions) {
     var options = nx.mix(DEFAULT_OPTIONS, inOptions);
