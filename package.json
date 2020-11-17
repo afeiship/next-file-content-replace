@@ -40,5 +40,17 @@
   },
   "dependencies": {
     "@jswork/next-array-replace": "^1.0.0"
-  }
+  },
+  "keywords": [
+    "next",
+    "file",
+    "replace",
+    "in",
+    "content",
+    "string",
+    "regexp",
+    "glob",
+    "pattern",
+    "globby"
+  ]
 }
