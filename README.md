@@ -14,7 +14,7 @@ npm install -S @jswork/next-replace-in-file
 ## usage
 > Basic usage.
   ```js
-  import '@feizheng/next-replace-in-file';
+  import '@jswork/next-replace-in-file';
 
   // basic usage:
   nx.replaceInFile('test/**', [[/VERSION/gi, 'version']]);
